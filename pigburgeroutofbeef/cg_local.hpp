@@ -9,6 +9,8 @@ namespace cg
 {
 	struct DxGlobal
 	{
+		
+		IDirect3D9* d3d9;
 		IDirect3DDevice9* device;
 
 	};

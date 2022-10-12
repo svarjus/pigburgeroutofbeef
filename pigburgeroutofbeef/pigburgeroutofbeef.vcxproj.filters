@@ -43,6 +43,21 @@
     <Filter Include="Header Files\entry">
       <UniqueIdentifier>{c9414426-8b7c-4a8c-9268-8485be9ab12d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\render\ui">
+      <UniqueIdentifier>{86f71d40-539d-4d9e-991f-53de1ea40dab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shared">
+      <UniqueIdentifier>{068a25cb-fa06-474c-acac-5785a1a9a253}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shared\math">
+      <UniqueIdentifier>{67c85d60-9323-47c1-8736-3b0c804cf48f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shared\global">
+      <UniqueIdentifier>{ec184816-d157-4c84-8e36-22de57827d2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine">
+      <UniqueIdentifier>{480e0e1d-c017-4680-9105-4ac00d395b3f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -108,6 +123,21 @@
     <ClInclude Include="entrypoint.hpp">
       <Filter>Header Files\entry</Filter>
     </ClInclude>
+    <ClInclude Include="r_ui.hpp">
+      <Filter>Source Files\render\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="q_math.hpp">
+      <Filter>Source Files\shared\math</Filter>
+    </ClInclude>
+    <ClInclude Include="interfaces.hpp">
+      <Filter>Source Files\shared\global</Filter>
+    </ClInclude>
+    <ClInclude Include="e_enginetrace.hpp">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="e_collideable.hpp">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -160,6 +190,15 @@
     </ClCompile>
     <ClCompile Include="entrypoint.cpp">
       <Filter>Header Files\entry</Filter>
+    </ClCompile>
+    <ClCompile Include="r_ui.cpp">
+      <Filter>Source Files\render\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="q_math.cpp">
+      <Filter>Source Files\shared\math</Filter>
+    </ClCompile>
+    <ClCompile Include="e_enginetrace.cpp">
+      <Filter>Source Files\engine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -10,6 +10,11 @@
 #define ANGLE2SHORT( x )  ( (int)( ( x ) * 65536 / 360 ) & 65535 )
 #define SHORT2ANGLE( x )  ( ( x ) * ( 360.0 / 65536 ) )
 
+#define	PITCH					0		// up / down
+#define	YAW						1		// left / right
+#define	ROLL					2		// fall over
+
+
 typedef float vec_t;
 typedef vec_t vec2_t[2];
 typedef vec_t vec3_t[3];
@@ -88,12 +93,19 @@ typedef vec_t vec4_t[4];
 #include "koukku.hpp"
 
 #include "entrypoint.hpp"
+#include "q_math.hpp"
+
+#include "e_enginetrace.hpp"
+#include "e_collideable.hpp"
 
 #include "cg_local.hpp"
 #include "cg_offsets.hpp"
 #include "cg_init.hpp"
 
+#include "interfaces.hpp"
+
 #include "r_init.hpp"
+#include "r_ui.hpp"
 
 #include "fs_funcs.h"
 #include "fs_log.hpp"
