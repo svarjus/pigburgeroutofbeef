@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\cg">
+      <UniqueIdentifier>{6eeb53f1-60b7-42f6-aec5-4506b56943e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\evar">
+      <UniqueIdentifier>{52fe0021-7f71-4400-b82f-28c53bf60b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\_lib">
+      <UniqueIdentifier>{5dd75452-9643-4093-8bc2-6e1ee0984d3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\_lib\glm">
+      <UniqueIdentifier>{aa6833fa-5d46-4429-b94f-1ee2e2e0b32a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\_lib\ImGui">
+      <UniqueIdentifier>{8fbfbba2-971f-4738-8aff-b616bf8a28c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\_lib\detours">
+      <UniqueIdentifier>{775a186b-b93f-4028-9ef5-2616cd3079d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\render">
+      <UniqueIdentifier>{7c02eaf3-c0bf-4a9c-b8d1-40404db136d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\cg">
+      <UniqueIdentifier>{baa6c12a-0f3c-4b60-98b3-168dea5fbec6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\_lib\koukku">
+      <UniqueIdentifier>{c4834385-616a-40f0-8ab5-cb5fbf41c906}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\entry">
+      <UniqueIdentifier>{c9414426-8b7c-4a8c-9268-8485be9ab12d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cg_init.hpp">
+      <Filter>Source Files\cg</Filter>
+    </ClInclude>
+    <ClInclude Include="evar_config.h">
+      <Filter>Source Files\evar</Filter>
+    </ClInclude>
+    <ClInclude Include="evars.h">
+      <Filter>Source Files\evar</Filter>
+    </ClInclude>
+    <ClInclude Include="fs_funcs.h">
+      <Filter>Source Files\evar</Filter>
+    </ClInclude>
+    <ClInclude Include="evar.h">
+      <Filter>Source Files\evar</Filter>
+    </ClInclude>
+    <ClInclude Include="detours\detours.h">
+      <Filter>Header Files\_lib\detours</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dx9.h">
+      <Filter>Header Files\_lib\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_win32.h">
+      <Filter>Header Files\_lib\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>Header Files\_lib\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <Filter>Header Files\_lib\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <Filter>Header Files\_lib\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <Filter>Header Files\_lib\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>Header Files\_lib\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>Header Files\_lib\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="r_init.hpp">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="cg_local.hpp">
+      <Filter>Header Files\cg</Filter>
+    </ClInclude>
+    <ClInclude Include="cg_offsets.hpp">
+      <Filter>Header Files\cg</Filter>
+    </ClInclude>
+    <ClInclude Include="koukku.hpp">
+      <Filter>Header Files\_lib\koukku</Filter>
+    </ClInclude>
+    <ClInclude Include="entrypoint.hpp">
+      <Filter>Header Files\entry</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cg_init.cpp">
+      <Filter>Source Files\cg</Filter>
+    </ClCompile>
+    <ClCompile Include="fs_funcs.cpp">
+      <Filter>Source Files\evar</Filter>
+    </ClCompile>
+    <ClCompile Include="fs_log.cpp">
+      <Filter>Source Files\evar</Filter>
+    </ClCompile>
+    <ClCompile Include="evar.cpp">
+      <Filter>Source Files\evar</Filter>
+    </ClCompile>
+    <ClCompile Include="evar_config.cpp">
+      <Filter>Source Files\evar</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_demo.cpp">
+      <Filter>Header Files\_lib\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>Header Files\_lib\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx9.cpp">
+      <Filter>Header Files\_lib\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp">
+      <Filter>Header Files\_lib\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_tables.cpp">
+      <Filter>Header Files\_lib\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <Filter>Header Files\_lib\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>Header Files\_lib\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="r_init.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="r_main.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="koukku.cpp">
+      <Filter>Header Files\_lib\koukku</Filter>
+    </ClCompile>
+    <ClCompile Include="entrypoint.cpp">
+      <Filter>Header Files\entry</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="detours\detours.lib">
+      <Filter>Header Files\_lib\detours</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
