@@ -275,7 +275,7 @@ public:
 		return TRACE_ENTITIES_ONLY;
 	}
 };
-
+class CBaseHandle;
 struct Ray_t
 {
 	__declspec(align(16)) vec3_t  m_Start;	// starting point, centered within the extents
@@ -294,8 +294,8 @@ class IHandleEntity
 {
 public:
 	virtual ~IHandleEntity() {}
-	virtual void SetRefEHandle(const void* handle) = 0;
-	virtual const void* GetRefEHandle() const = 0;
+	virtual void SetRefEHandle(const CBaseHandle& handle) = 0;
+	virtual const CBaseHandle& GetRefEHandle() const = 0;
 };
 
 

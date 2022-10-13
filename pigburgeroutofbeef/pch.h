@@ -72,8 +72,15 @@ typedef vec_t vec4_t[4];
 
 #include <glm/glm.hpp>
 
+#define __T(x)      L ## x
+#define _T(x)       __T(x)
+#define _TEXT(x)    __T(x)
+#define  Assert( _exp )           							_AssertMsg( _exp, _T("Assertion Failed: ") _T(#_exp), ((void)0), false )
+#define  AssertMsg_( _exp, _msg )  							_AssertMsg( _exp, _msg, ((void)0), false )
+
 #ifndef matrxix
 #define matrxix
+
 class Matrix3x4 {
 	float mat[3][4];
 public:
@@ -121,15 +128,21 @@ constexpr void Matrix3x4::origin(vec3_t out) const noexcept
 #include "e_engineclient.hpp"
 #include "iclientrenderable.hpp"
 #include "icliententitylist.hpp"
+#include "basehandle.hpp"
+#include "iserverentity.hpp"
+#include "baseentity.hpp"
 #include "cg_local.hpp"
 #include "cg_offsets.hpp"
 #include "cg_init.hpp"
+
 
 #include "interfaces.hpp"
 
 #include "r_drawtools.hpp"
 #include "r_init.hpp"
 #include "r_ui.hpp"
+
+#include "mod_vis_bone.hpp"
 
 #include "fs_funcs.h"
 #include "fs_log.hpp"

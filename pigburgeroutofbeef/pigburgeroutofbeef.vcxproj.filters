@@ -61,6 +61,9 @@
     <Filter Include="Source Files\render\tools">
       <UniqueIdentifier>{18b1d339-b90c-4592-99cc-883b6090962c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\render\player">
+      <UniqueIdentifier>{e7e48172-1d67-47f5-9c6c-91ebebd2ae4b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -159,6 +162,18 @@
     <ClInclude Include="r_drawtools.hpp">
       <Filter>Source Files\render\tools</Filter>
     </ClInclude>
+    <ClInclude Include="baseentity.hpp">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="iserverentity.hpp">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="basehandle.hpp">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="mod_vis_bone.hpp">
+      <Filter>Source Files\render\player</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -226,6 +241,9 @@
     </ClCompile>
     <ClCompile Include="r_drawtools.cpp">
       <Filter>Source Files\render\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="mod_vis_bone.cpp">
+      <Filter>Source Files\render\player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

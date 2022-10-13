@@ -162,14 +162,23 @@ struct Vector
 {
 	float x, y, z;
 };
-class IClientEntity : public IClientRenderable {
+class IClientEntity /*: public IClientRenderable*/ {
 public:
-	//VIRTUAL_METHOD(bool, SetupBones, 13, (Matrix3x4* out, int maxBones, int boneMask, float currentTime), (this + sizeof(uintptr_t), out, maxBones, boneMask, currentTime))
+	VIRTUAL_METHOD(bool, SetupBones, 13, (Matrix3x4* out, int maxBones, int boneMask, float currentTime), (this + sizeof(uintptr_t), out, maxBones, boneMask, currentTime));
+	VIRTUAL_METHOD(const model_t*, GetModel, 8, (), (this + sizeof(uintptr_t)));
 
 	const int& GetHealth();
+	const int& TeamNumber();
+	const bool InMyTeam(); 
+	const bool isAlive();
+
 	void GetOrigin(vec3_t out);
 	void GetAngles(vec3_t out);
 	const int& GetCurrentWeapon();
+	void GetBoneMatrix(Matrix3x4* out);
+	void GetBone(int16_t index, vec3_t position);
+
+
 };
 
 class IClientEntityList

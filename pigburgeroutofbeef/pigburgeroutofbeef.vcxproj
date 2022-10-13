@@ -147,6 +147,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="baseentity.hpp" />
+    <ClInclude Include="basehandle.hpp" />
     <ClInclude Include="cg_init.hpp" />
     <ClInclude Include="cg_local.hpp" />
     <ClInclude Include="cg_offsets.hpp" />
@@ -172,7 +174,9 @@
     <ClInclude Include="ImGui\imstb_textedit.h" />
     <ClInclude Include="ImGui\imstb_truetype.h" />
     <ClInclude Include="interfaces.hpp" />
+    <ClInclude Include="iserverentity.hpp" />
     <ClInclude Include="koukku.hpp" />
+    <ClInclude Include="mod_vis_bone.hpp" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="q_math.hpp" />
     <ClInclude Include="r_drawtools.hpp" />
@@ -218,6 +222,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="koukku.cpp" />
+    <ClCompile Include="mod_vis_bone.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
