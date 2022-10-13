@@ -8,10 +8,14 @@
 namespace cg
 {
 	inline DWORD shaderapidx9 = (DWORD)GetModuleHandle("shaderapidx9.dll");
-
+	inline DWORD client_module = (DWORD)GetModuleHandle("client.dll");
+	inline DWORD engine_module = (DWORD)GetModuleHandle("engine.dll");
+	inline DWORD localPplayer_module = client_module + dwLocalPlayer;
+	inline DWORD server_module = (DWORD)GetModuleHandle("server.dll");
 
 	inline DxGlobal dx;
-	inline IDirect3DDevice9* device = reinterpret_cast<IDirect3DDevice9*>(shaderapidx9 + 0xA6050);
+	inline vmatrix* viewMatrix = reinterpret_cast<vmatrix*>(client_module + dwViewMatrix);
+	inline GlobalVars* globalVars = reinterpret_cast<GlobalVars*>(engine_module + 0x58CCE0);
 
 }
 

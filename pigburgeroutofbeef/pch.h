@@ -72,6 +72,25 @@ typedef vec_t vec4_t[4];
 
 #include <glm/glm.hpp>
 
+#ifndef matrxix
+#define matrxix
+class Matrix3x4 {
+	float mat[3][4];
+public:
+	constexpr auto operator[](int i) const noexcept { return mat[i]; }
+
+	constexpr void origin(vec3_t out) const noexcept;
+};
+
+constexpr void Matrix3x4::origin(vec3_t out) const noexcept
+{
+	out[0] = mat[0][3];
+	out[1] = mat[1][3];
+	out[2] = mat[2][3];
+	//return vec3_t{ mat[0][3], mat[1][3], mat[2][3] };
+}
+#endif
+
 #pragma comment(lib, "d3d9.lib")
 #pragma comment(lib, "d3dx9.lib")
 
@@ -94,16 +113,21 @@ typedef vec_t vec4_t[4];
 
 #include "entrypoint.hpp"
 #include "q_math.hpp"
+#include "vplane.hpp"
 
 #include "e_enginetrace.hpp"
 #include "e_collideable.hpp"
-
+#include "gl_model_private.hpp"
+#include "e_engineclient.hpp"
+#include "iclientrenderable.hpp"
+#include "icliententitylist.hpp"
 #include "cg_local.hpp"
 #include "cg_offsets.hpp"
 #include "cg_init.hpp"
 
 #include "interfaces.hpp"
 
+#include "r_drawtools.hpp"
 #include "r_init.hpp"
 #include "r_ui.hpp"
 

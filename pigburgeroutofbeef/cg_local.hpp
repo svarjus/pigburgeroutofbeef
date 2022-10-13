@@ -7,6 +7,11 @@
 
 namespace cg
 {
+	struct vmatrix
+	{
+		float viewMatrix[4][4];
+	};
+
 	struct DxGlobal
 	{
 		
@@ -15,6 +20,17 @@ namespace cg
 
 	};
 
+	struct GlobalVars {
+		float realtime;
+		int framecount;
+		float absoluteFrameTime;
+		float absoluteFrameStartTimestddev;
+		float currenttime;
+		float frametime;
+		int maxClients;
+		int tickCount;
+		float intervalPerTick;
+	};
 
 }
 

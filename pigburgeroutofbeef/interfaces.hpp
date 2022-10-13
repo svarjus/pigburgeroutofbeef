@@ -23,6 +23,7 @@ T* GetInterface(const char* name, const char* library)
 
 
 }
+
 namespace interfaces
 {
 	const char* const EngineTraceClient004 = "EngineTraceClient004"; // engine
@@ -31,8 +32,8 @@ namespace interfaces
 	const char* const VClientEntityList003 = "VClientEntityList003"; //client
 
 	inline IEngineTrace* engineTrace = GetInterface<IEngineTrace>(EngineTraceClient004, "engine.dll");
-	//inline auto entityList = GetInterface<IClientEntityList>(VClientEntityList003, "client.dll");
-	//inline auto local = GetInterface<IVEngineClient013>(VEngineClient014, "engine.dll");
+	inline IClientEntityList* entityList = GetInterface<IClientEntityList>(VClientEntityList003, "client.dll");
+	inline IVEngineClient* local = GetInterface<IVEngineClient>(VEngineClient014, "engine.dll");
 	//inline auto modelInfo = GetInterface<ModelInfo>(VModelInfoClient004, "engine.dll");
 };
 

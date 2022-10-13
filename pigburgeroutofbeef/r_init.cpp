@@ -30,6 +30,7 @@ bool r::R_ImGui(IDirect3DDevice9* pDevice)
 	if (ImGui::GetCurrentContext())
 		return true;
 
+	srand(21412);
 	fs::Log_Write(LOG_NONE, "Writing ImGui context\n");
 
 	ImGui::CreateContext();

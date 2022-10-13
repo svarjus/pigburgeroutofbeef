@@ -58,6 +58,9 @@
     <Filter Include="Source Files\engine">
       <UniqueIdentifier>{480e0e1d-c017-4680-9105-4ac00d395b3f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\render\tools">
+      <UniqueIdentifier>{18b1d339-b90c-4592-99cc-883b6090962c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -138,6 +141,24 @@
     <ClInclude Include="e_collideable.hpp">
       <Filter>Source Files\engine</Filter>
     </ClInclude>
+    <ClInclude Include="e_engineclient.hpp">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="gl_model_private.hpp">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="vplane.hpp">
+      <Filter>Source Files\shared\math</Filter>
+    </ClInclude>
+    <ClInclude Include="icliententitylist.hpp">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="iclientrenderable.hpp">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="r_drawtools.hpp">
+      <Filter>Source Files\render\tools</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -199,6 +220,12 @@
     </ClCompile>
     <ClCompile Include="e_enginetrace.cpp">
       <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="icliententity.cpp">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="r_drawtools.cpp">
+      <Filter>Source Files\render\tools</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
